@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketplace App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <style>
+    /* styles.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+}
+
+/* Post Item Form */
+.post-item-form {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.post-item-form h2 {
+    margin-bottom: 15px;
+}
+
+.post-item-form input, .post-item-form textarea, .post-item-form button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.post-item-form button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.post-item-form button:hover {
+    background-color: #555;
+}
+
+/* Items Display Section */
+.item-display {
+    padding: 20px;
+    margin: 20px;
+}
+
+.item-display h2 {
+    margin-bottom: 15px;
+}
+
+.item-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.item-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    width: 200px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.item-card h3 {
+    margin: 10px 0;
+}
+
+.item-card p {
+    font-size: 14px;
+    color: #555;
+}
+
+  </style>
+    <!-- Header -->
+    <header class="navbar">
+        <h1>Marketplace</h1>
+    </header>
+
+    <!-- Item Post Form (Simulation) -->
+    <section class="post-item-form">
+        <h2>Post Your Item for Sale</h2>
+        <form id="itemForm">
+            <input type="text" placeholder="Item Name" required>
+            <input type="text" placeholder="Price" required>
+            <textarea placeholder="Description" required></textarea>
+            <button type="submit">Post Item</button>
+        </form>
+    </section>
+
+    <!-- Items Display Section -->
+    <section class="item-display">
+        <h2>Items for Sale</h2>
+        <div class="item-grid">
+            <!-- Example Item Cards -->
+            <div class="item-card">
+                <h3>Item 1</h3>
+                <p>$100</p>
+                <p>Description of item 1</p>
+            </div>
+            <div class="item-card">
+                <h3>Item 2</h3>
+                <p>$200</p>
+                <p>Description of item 2</p>
+            </div>
+            <div class="item-card">
+                <h3>Item 3</h3>
+                <p>$150</p>
+                <p>Description of item 3</p>
+            </div>
+            <!-- Additional items could be added here manually or by JS in a real app -->
+        </div>
+    </section>
+</body>
+</html>
